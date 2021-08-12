@@ -1,0 +1,119 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #E4EFF0;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 15%;
+}
+
+.container h1{
+    font-weight: 1000;
+    color:#021E66;
+    line-height: 1.25;
+    font-size: 6rem;
+}
+
+span{
+    font-weight: 1000;
+    line-height: 1.25;
+    font-size: 4rem;
+    display:flex;
+    justify-content: center;
+    color:#2B4C59;
+}
+
+.reset{
+    margin-left:5% ;
+    margin-right:5% ;
+}
+
+.btn {
+    text-transform: uppercase;
+    background: transparent;
+    color:black;
+    padding: 0.375rem 0.75rem;
+    display: inline-block;
+    font-size: 0.875rem;
+    border: 2px solid #D7D7D6;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius:0.5rem;
+}
+
+.increase:hover {
+    color: white;
+    background: #159947;
+    border: 2px solid #06373A;
+}
+
+.decrease:hover {
+    color: white;
+    background: #C1000F;
+    border: 2px solid #5E000C;
+}
+
+/* @media screen and (min-width: 800px) {
+    h1 {
+        font-size: 4rem;
+    }
+    span {
+        font-size: 2rem;
+    }
+    .btn{
+        font-size: 0.5rem;
+
+    }
+} */
+
+
+
+.anim {
+    margin-left: 43%;
+    margin-top: 3%;
+    width: 150px;
+    height: 150px;
+    background-color: #FD8839;
+    -webkit-animation: squareToCircle 2s 1s infinite alternate;
+}
+
+@-webkit-keyframes squareToCircle {
+    0% {
+        border-radius: 0 0 0 0;
+        background: #FD8839;
+        transform: rotate(0deg);
+    }
+
+    25% {
+        border-radius: 50% 0 0 0;
+        background: #FD8839;
+        transform: rotate(45deg);
+    }
+
+    50% {
+        border-radius: 50% 50% 0 0;
+        background: #F8FF46;
+        transform: rotate(90deg);
+    }
+
+    75% {
+        border-radius: 50% 50% 50% 0;
+        background: #F7AD19;
+        transform: rotate(135deg);
+    }
+
+    100% {
+        border-radius: 50% 50% 50% 50%;
+        background: #FE7B72;
+        transform: rotate(180deg);
+    }
+}
